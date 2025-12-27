@@ -458,25 +458,22 @@ section {
 
 .about-image {
     position: relative;
-    padding: 20px;
 }
 
 .image-wrapper {
     position: relative;
     width: 400px;
     height: 500px;
-    overflow: hidden;
-    border-radius: 12px;
 }
 
 .image-border {
     position: absolute;
-    top: -6;
-    left: -6;
-    right: -6;
-    bottom: -6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border: 6px solid var(--primary-color);
-    border-radius: 18px;
+    border-radius: 12px;
     z-index: 2;
     pointer-events: none;
 }
