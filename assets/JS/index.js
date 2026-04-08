@@ -220,7 +220,7 @@ const observer = new IntersectionObserver((entries) => {
             if (entry.target.classList.contains('skill-category')) {
                 const progressBars = entry.target.querySelectorAll('.skill-progress');
                 progressBars.forEach(bar => {
-                    const progress = bar.getAttribute('data-progress');
+                    const progress = bar.dataset.progress;
                     bar.style.width = progress + '%';
                 });
             }
